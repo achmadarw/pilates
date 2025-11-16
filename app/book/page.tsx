@@ -286,10 +286,7 @@ export default function Book() {
   const handleLoginContinue = () => {
     // In real implementation, this would authenticate and proceed to booking
     if (email) {
-      window.open(
-        "https://clients.mindbodyonline.com/classic/ws?studioid=7268",
-        "_blank"
-      );
+      window.open("", "_blank");
       setShowBookingModal(false);
       setBookingStep("summary");
       setEmail("");
@@ -300,10 +297,7 @@ export default function Book() {
   const handleSocialLogin = (provider: "google" | "apple") => {
     // In real implementation, this would handle OAuth flow
     console.log(`Login with ${provider}`);
-    window.open(
-      "https://clients.mindbodyonline.com/classic/ws?studioid=7268",
-      "_blank"
-    );
+    window.open("", "_blank");
     setShowBookingModal(false);
     setBookingStep("summary");
     setEmail("");
@@ -312,10 +306,7 @@ export default function Book() {
   // Handle staff sign in
   const handleStaffSignIn = () => {
     // In real implementation, this would redirect to staff portal
-    window.open(
-      "https://clients.mindbodyonline.com/classic/ws?studioid=7268",
-      "_blank"
-    );
+    window.open("", "_blank");
     setShowBookingModal(false);
     setBookingStep("summary");
     setEmail("");
@@ -687,7 +678,7 @@ export default function Book() {
           {/* Book Now Button */}
           <div className="text-center mt-12">
             <a
-              href="https://clients.mindbodyonline.com/classic/ws?studioid=7268"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-block text-lg"
@@ -796,7 +787,7 @@ export default function Book() {
                         to 12 hours before class.
                       </p>
                       <a
-                        href="https://clients.mindbodyonline.com/classic/ws?studioid=7268"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-red-600 hover:text-red-700 font-semibold transition-colors"
@@ -969,7 +960,7 @@ export default function Book() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://clients.mindbodyonline.com/classic/ws?studioid=7268"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="bg-stone-100 text-stone-700 hover:bg-white px-8 py-4 rounded-lg font-light transition-colors text-lg"

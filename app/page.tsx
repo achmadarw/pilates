@@ -244,7 +244,7 @@ export default function Home() {
             on everything).
           </p>
           <Link
-            href="https://clients.mindbodyonline.com/asp/su1.asp?fl=true&tabID=2"
+            href=""
             className="bg-white text-stone-700 hover:bg-stone-100 px-8 py-3 rounded-md font-light transition-colors inline-block"
           >
             SIGN UP

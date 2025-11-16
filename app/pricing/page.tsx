@@ -74,7 +74,7 @@ export default function Pricing() {
                     for 14 days.
                   </p>
                   <a
-                    href="https://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&sTG=22&prodId=376"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-semibold transition-colors inline-block"
@@ -101,7 +101,7 @@ export default function Pricing() {
                 </p>
                 <div className="text-center">
                   <a
-                    href="https://clients.mindbodyonline.com/asp/main_shop.asp?pMode=0&tabID=3"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-semibold transition-colors inline-block"
@@ -145,7 +145,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="https://clients.mindbodyonline.com/asp/main_shop.asp?pMode=0&tabID=3"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -161,7 +161,7 @@ export default function Pricing() {
                     <td className="px-6 py-4 text-sm">One off casual pass</td>
                     <td className="px-6 py-4">
                       <a
-                        href="https://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&sTG=22&prodId=54"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -180,7 +180,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="https://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&sTG=22&prodId=376"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -198,7 +198,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="http://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&prodid=61"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -216,7 +216,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="http://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&prodid=62"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -234,7 +234,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="http://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&prodid=63"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -255,7 +255,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="http://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&prodid=56"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -275,7 +275,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="http://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&prodid=102"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -295,7 +295,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="http://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&prodid=58"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -313,7 +313,7 @@ export default function Pricing() {
                     </td>
                     <td className="px-6 py-4">
                       <a
-                        href="https://clients.mindbodyonline.com/asp/main_shop.asp?pMode=2&tabID=3"
+                        href="https:///asp/main_shop.asp?pMode=2&tabID=3"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors"
@@ -368,7 +368,7 @@ export default function Pricing() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://clients.mindbodyonline.com/classic/ws?studioid=7268&stype=41&sTG=22&prodId=376"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors"

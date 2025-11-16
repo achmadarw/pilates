@@ -89,7 +89,7 @@ export default function About() {
               <p>
                 If you are unwell or isolating we have some great high quality{" "}
                 <a
-                  href="https://video.mindbody.io/studios/7268/sign-in"
+                  href=""
                   className="text-orange-600 hover:text-orange-800 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
