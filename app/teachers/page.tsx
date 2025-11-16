@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const teachers = [
   {
@@ -7,6 +8,7 @@ const teachers = [
     bio: "Laura's journey with yoga began as a way to find balance in her busy life. Now she shares that same sense of peace and strength with her students.",
     image: "/images/teachers/teacher-1.jpg",
     specialties: ["HOT FLOW", "YIN YOGA"],
+    slug: "laura-pugh",
   },
   {
     name: "SARAH MITCHELL",
@@ -14,6 +16,7 @@ const teachers = [
     bio: "Sarah's classes focus on building strength and flexibility while maintaining a calm and centered mind through breathwork.",
     image: "/images/teachers/teacher-2.jpg",
     specialties: ["HOT FLOW", "YIN YOGA"],
+    slug: "sarah-mitchell",
   },
   {
     name: "EMMA THOMPSON",
@@ -21,6 +24,7 @@ const teachers = [
     bio: "Emma brings creativity and flow to every class, helping students connect with their bodies in new and meaningful ways.",
     image: "/images/teachers/teacher-3.jpg",
     specialties: ["INFERNO HOT PILATES", "MAT PILATES"],
+    slug: "emma-thompson",
   },
   {
     name: "JESSICA PARK",
@@ -28,6 +32,7 @@ const teachers = [
     bio: "Jessica's teaching style combines traditional yoga principles with modern movement, creating classes that are both grounding and energizing.",
     image: "/images/teachers/teacher-4.jpg",
     specialties: ["ORIGINAL HOT YOGA", "HOT FLOW"],
+    slug: "jessica-park",
   },
   {
     name: "MAYA RODRIGUEZ",
@@ -35,6 +40,7 @@ const teachers = [
     bio: "Maya's passion for yoga shines through in her encouraging and supportive teaching style, making every student feel welcome.",
     image: "/images/teachers/teacher-5.jpg",
     specialties: ["YIN YOGA", "MAT PILATES"],
+    slug: "maya-rodriguez",
   },
   {
     name: "ZOE WILLIAMS",
@@ -42,6 +48,7 @@ const teachers = [
     bio: "Zoe creates a safe and nurturing space for students to explore their practice, emphasizing self-compassion and mindful movement.",
     image: "/images/teachers/teacher-6.jpg",
     specialties: ["HOT FLOW", "YIN YOGA"],
+    slug: "zoe-williams",
   },
   {
     name: "CHLOE ANDERSON",
@@ -49,6 +56,7 @@ const teachers = [
     bio: "Chloe's dynamic teaching style challenges students to push their boundaries while maintaining proper alignment and breath awareness.",
     image: "/images/teachers/teacher-7.jpg",
     specialties: ["INFERNO HOT PILATES", "ORIGINAL HOT YOGA"],
+    slug: "chloe-anderson",
   },
   {
     name: "SOPHIE CHEN",
@@ -56,6 +64,7 @@ const teachers = [
     bio: "Sophie combines her knowledge of anatomy with flowing sequences, creating classes that are both therapeutic and transformative.",
     image: "/images/teachers/teacher-8.jpg",
     specialties: ["MAT PILATES", "HOT FLOW"],
+    slug: "sophie-chen",
   },
 ];
 
@@ -107,9 +116,10 @@ export default function TeachersPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
               {teachers.map((teacher, index) => (
-                <div
+                <Link
                   key={index}
-                  className="flex flex-col items-center text-center group max-w-sm"
+                  href={`/teachers/${teacher.slug}`}
+                  className="flex flex-col items-center text-center group max-w-sm cursor-pointer"
                 >
                   {/* Teacher Photo */}
                   <div className="relative mb-6">
@@ -159,7 +169,7 @@ export default function TeachersPage() {
                       ))}
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
