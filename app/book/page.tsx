@@ -714,13 +714,9 @@ export default function Book() {
                 </h3>
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <p className="text-gray-700 mb-2">
-                    <strong>33 St Andrew Street</strong>
+                    <strong>Jl. Wolter Monginsidi No.59, 3rd Floor,</strong>
                     <br />
-                    Central Dunedin
-                    <br />
-                    Dunedin 9016
-                    <br />
-                    New Zealand
+                    Jakarta Selatan
                   </p>
                 </div>
               </div>

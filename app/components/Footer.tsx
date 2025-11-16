@@ -145,13 +145,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Location</h4>
             <address className="text-gray-300 not-italic">
-              33 St Andrew Street,
+              Jl. Wolter Monginsidi No.59, 3rd Floor,
               <br />
-              Central Dunedin
-              <br />
-              Dunedin 9016
-              <br />
-              New Zealand
+              Jakarta Selatan
             </address>
           </div>
 
@@ -177,7 +173,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-300 text-sm mb-4 md:mb-0">
-            © 2024, Hot Yoga Dunedin Developed by DOT THE i
+            © 2024, FERDIN Developed by achmadarw
           </div>
           <div className="text-gray-300 text-sm">
             <a
@@ -186,7 +182,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
             >
-              OHYA Studio Partner
+              FERDIN Studio Partner
             </a>
           </div>
         </div>

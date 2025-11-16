@@ -19,7 +19,7 @@ export const ImageExamples = () => {
         <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
         <div className="relative z-20 flex items-center justify-center h-full text-white">
           <h1 className="text-6xl font-bold text-center">
-            Heated yoga and Pilates in Central Dunedin
+            Heated yoga and Pilates in South Jakarta
           </h1>
         </div>
       </section>

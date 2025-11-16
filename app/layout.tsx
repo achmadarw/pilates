@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Hot Yoga Dunedin - Heated Yoga and Pilates in Central Dunedin",
+  title: "Hot Yoga Dunedin - Heated Yoga and Pilates in South Jakarta",
   description:
-    "Independently run since 2009, offering heated and non-heated yoga classes, Mat Pilates, and Inferno Hot Pilates for all levels in Central Dunedin, New Zealand.",
+    "Independently run since 2009, offering heated and non-heated yoga classes, Mat Pilates, and Inferno Hot Pilates for all levels in South Jakarta.",
 };
 
 export default function RootLayout({

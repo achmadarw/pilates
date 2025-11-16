@@ -53,13 +53,9 @@ export default function Contact() {
                       Location
                     </h3>
                     <address className="text-gray-600 not-italic">
-                      33 St Andrew Street
+                      Jl. Wolter Monginsidi No.59, 3rd Floor,
                       <br />
-                      Central Dunedin
-                      <br />
-                      Dunedin 9016
-                      <br />
-                      New Zealand
+                      Jakarta Selatan
                     </address>
                   </div>
                 </div>
@@ -308,7 +304,7 @@ export default function Contact() {
           </div>
           <div className="text-center mt-6">
             <p className="text-gray-600 mb-4">
-              Located in the heart of Central Dunedin, we&apos;re easily
+              Located in the heart of South Jakarta, we&apos;re easily
               accessible by public transport and car.
             </p>
             <a
