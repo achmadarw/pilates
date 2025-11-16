@@ -1,246 +1,167 @@
-import Link from "next/link";
+import Image from "next/image";
 
-export default function Teachers() {
-  const teachers = [
-    {
-      name: "DONNA WIKIO",
-      role: "FOUNDER & DIRECTOR",
-      classes: ["INFERNO HOT PILATES", "ORIGINAL HOT YOGA"],
-      slug: "donna-wikio",
-    },
-    {
-      name: "LAURA PUGH",
-      role: "TEACHER",
-      classes: ["YIN", "HOT FLOW", "INFERNO HOT PILATES"],
-      slug: "laura-pugh",
-    },
-    {
-      name: "ADRIENNE ROY",
-      role: "TEACHER",
-      classes: [
-        "ORIGINAL HOT YOGA",
-        "INFERNO HOT PILATES",
-        "YIN",
-        "MAT PILATES",
-      ],
-      slug: "adrienne-roy",
-    },
-    {
-      name: "JESS DOBSON",
-      role: "TEACHER",
-      classes: ["HOT FLOW"],
-      slug: "jess-dobson",
-    },
-    {
-      name: "MANDI SAUL",
-      role: "TEACHER",
-      classes: ["INFERNO HOT PILATES", "MAT PILATES"],
-      slug: "mandi-saul",
-    },
-    {
-      name: "EMMANUELLE GOMEZ",
-      role: "TEACHER",
-      classes: ["ORIGINAL HOT YOGA", "YIN"],
-      slug: "emmanuelle-gomez",
-    },
-    {
-      name: "MUNIRAH BURRA",
-      role: "TEACHER",
-      classes: ["ORIGINAL HOT YOGA", "YIN"],
-      slug: "munirah-burra",
-    },
-    {
-      name: "FRAN RAE",
-      role: "TEACHER",
-      classes: ["YIN"],
-      slug: "fran-rae",
-    },
-    {
-      name: "ALICE CHEUNG",
-      role: "TEACHER",
-      classes: ["INFERNO HOT PILATES"],
-      slug: "alice-cheung",
-    },
-    {
-      name: "SARAH CHARLTON",
-      role: "TEACHER",
-      classes: ["HOT FLOW"],
-      slug: "sarah-charlton",
-    },
-    {
-      name: "ANNA POOLE",
-      role: "TEACHER",
-      classes: ["HOT FLOW"],
-      slug: "anna-poole",
-    },
-    {
-      name: "EVA LLOYD",
-      role: "TEACHER",
-      classes: ["INFERNO HOT PILATES"],
-      slug: "eva-lloyd",
-    },
-    {
-      name: "THERESA BOWEN",
-      role: "TEACHER",
-      classes: ["HOT FLOW"],
-      slug: "theresa-bowen",
-    },
-    {
-      name: "HELEN PLATTEN",
-      role: "TEACHER",
-      classes: ["YIN"],
-      slug: "helen-platten",
-    },
-    {
-      name: "MOANA KYLE",
-      role: "TEACHER",
-      classes: ["YIN"],
-      slug: "moana-kyle",
-    },
-    {
-      name: "BELLA DEVEREUX",
-      role: "TEACHER",
-      classes: ["HOT FLOW"],
-      slug: "bella-devereux",
-    },
-    {
-      name: "ANNELIES VAN DIJKE",
-      role: "TEACHER",
-      classes: ["HOT FLOW", "INFERNO HOT PILATES", "YIN"],
-      slug: "annelies-van-dijke",
-    },
-  ];
+const teachers = [
+  {
+    name: "LAURA PUGH",
+    title: "TEACHER",
+    bio: "Laura's journey with yoga began as a way to find balance in her busy life. Now she shares that same sense of peace and strength with her students.",
+    image: "/images/teachers/teacher-1.jpg",
+    specialties: ["HOT FLOW", "YIN YOGA"],
+  },
+  {
+    name: "SARAH MITCHELL",
+    title: "TEACHER",
+    bio: "Sarah's classes focus on building strength and flexibility while maintaining a calm and centered mind through breathwork.",
+    image: "/images/teachers/teacher-2.jpg",
+    specialties: ["HOT FLOW", "YIN YOGA"],
+  },
+  {
+    name: "EMMA THOMPSON",
+    title: "TEACHER",
+    bio: "Emma brings creativity and flow to every class, helping students connect with their bodies in new and meaningful ways.",
+    image: "/images/teachers/teacher-3.jpg",
+    specialties: ["INFERNO HOT PILATES", "MAT PILATES"],
+  },
+  {
+    name: "JESSICA PARK",
+    title: "TEACHER",
+    bio: "Jessica's teaching style combines traditional yoga principles with modern movement, creating classes that are both grounding and energizing.",
+    image: "/images/teachers/teacher-4.jpg",
+    specialties: ["ORIGINAL HOT YOGA", "HOT FLOW"],
+  },
+  {
+    name: "MAYA RODRIGUEZ",
+    title: "TEACHER",
+    bio: "Maya's passion for yoga shines through in her encouraging and supportive teaching style, making every student feel welcome.",
+    image: "/images/teachers/teacher-5.jpg",
+    specialties: ["YIN YOGA", "MAT PILATES"],
+  },
+  {
+    name: "ZOE WILLIAMS",
+    title: "TEACHER",
+    bio: "Zoe creates a safe and nurturing space for students to explore their practice, emphasizing self-compassion and mindful movement.",
+    image: "/images/teachers/teacher-6.jpg",
+    specialties: ["HOT FLOW", "YIN YOGA"],
+  },
+  {
+    name: "CHLOE ANDERSON",
+    title: "TEACHER",
+    bio: "Chloe's dynamic teaching style challenges students to push their boundaries while maintaining proper alignment and breath awareness.",
+    image: "/images/teachers/teacher-7.jpg",
+    specialties: ["INFERNO HOT PILATES", "ORIGINAL HOT YOGA"],
+  },
+  {
+    name: "SOPHIE CHEN",
+    title: "TEACHER",
+    bio: "Sophie combines her knowledge of anatomy with flowing sequences, creating classes that are both therapeutic and transformative.",
+    image: "/images/teachers/teacher-8.jpg",
+    specialties: ["MAT PILATES", "HOT FLOW"],
+  },
+];
 
-  const getClassColor = (className: string) => {
-    switch (className) {
-      case "ORIGINAL HOT YOGA":
-        return "bg-red-100 text-red-800";
-      case "HOT FLOW":
-        return "bg-orange-100 text-orange-800";
-      case "INFERNO HOT PILATES":
-        return "bg-yellow-100 text-yellow-800";
-      case "MAT PILATES":
-        return "bg-green-100 text-green-800";
-      case "YIN":
-        return "bg-purple-100 text-purple-800";
-      default:
-        return "bg-gray-100 text-gray-800";
-    }
-  };
-
+export default function TeachersPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-stone-900">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Teachers</h1>
-          <p className="text-xl max-w-3xl mx-auto">
-            We have a passionate team of qualified teachers offering four types
-            of classes, we have three styles of yoga; Original Hot Yoga, Hot
-            Flow and Yin as well as Inferno Hot Pilates.
-          </p>
-        </div>
-      </section>
-
-      {/* Introduction Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="relative py-24 bg-stone-900">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gray-300 h-96 rounded-lg flex items-center justify-center">
-              <span className="text-gray-600">Teachers Group Image</span>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Meet our team of passionate teachers
-              </h2>
-              <p className="text-lg text-gray-700 mb-6">
+            {/* Left Column - Text Content */}
+            <div className="text-white">
+              <h1 className="text-5xl md:text-6xl font-light mb-8 tracking-wider">
+                OUR TEACHERS
+              </h1>
+              <p className="text-xl md:text-2xl font-light leading-relaxed mb-6">
+                We have a passionate team of qualified teachers offering four
+                types of classes, we have three styles of yoga; Original Hot
+                Yoga, Hot Flow and Yin as well as Inferno Hot Pilates.
+              </p>
+              <p className="text-lg font-light leading-relaxed opacity-90">
                 With 40+ classes per week, there is something for everyone. Open
                 every day of the year except Christmas Day.
               </p>
-              <p className="text-lg text-gray-700">
-                Our experienced and certified instructors are dedicated to
-                creating a safe, supportive, and transformative environment for
-                practitioners of all levels.
-              </p>
+            </div>
+
+            {/* Right Column - Team Photo */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-lg h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/hero/hero-teachers.jpg"
+                  alt="FERVID Teaching Team"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Teachers Grid */}
-      <section className="py-16 bg-white">
+      {/* Teachers Grid Section */}
+      <section className="py-20 bg-stone-100">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teachers.map((teacher, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-              >
-                <div className="bg-gray-300 h-64 flex items-center justify-center">
-                  <span className="text-gray-600">{teacher.name} Photo</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">
-                    {teacher.name}
-                  </h3>
-                  <p className="text-orange-600 font-semibold mb-4">
-                    {teacher.role}
-                  </p>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-light text-stone-800 mb-16 text-center tracking-wider max-w-4xl mx-auto">
+              MEET OUR TEAM OF PASSIONATE TEACHERS
+            </h2>
 
-                  <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-gray-600 mb-2">
-                      TEACHES:
-                    </h4>
-                    <div className="flex flex-wrap gap-1">
-                      {teacher.classes.map((className, classIndex) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
+              {teachers.map((teacher, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center group max-w-sm"
+                >
+                  {/* Teacher Photo */}
+                  <div className="relative mb-6">
+                    <div className="w-64 h-80 rounded-tl-3xl rounded-br-3xl overflow-hidden shadow-lg bg-stone-300 transition-transform duration-300 group-hover:scale-105">
+                      {teacher.image ? (
+                        <Image
+                          src={teacher.image}
+                          alt={teacher.name}
+                          width={256}
+                          height={320}
+                          className="object-cover w-full h-full"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-stone-400 flex items-center justify-center">
+                          <span className="text-stone-600 text-2xl font-light">
+                            {teacher.name
+                              .split(" ")
+                              .map((n) => n[0])
+                              .join("")}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Teacher Info */}
+                  <div className="w-full px-4">
+                    <h3 className="text-xl font-light text-stone-800 mb-2 tracking-wider text-center">
+                      {teacher.name}
+                    </h3>
+                    <p className="text-sm text-stone-600 mb-4 tracking-wide uppercase text-center">
+                      {teacher.title}
+                    </p>
+                    <p className="text-sm text-stone-700 leading-relaxed mb-6 font-light text-center">
+                      {teacher.bio}
+                    </p>
+
+                    {/* Specialties */}
+                    <div className="flex flex-wrap justify-center gap-2">
+                      {teacher.specialties.map((specialty, idx) => (
                         <span
-                          key={classIndex}
-                          className={`px-2 py-1 rounded-full text-xs font-medium ${getClassColor(
-                            className
-                          )}`}
+                          key={idx}
+                          className="px-3 py-1 bg-stone-800 text-white text-xs tracking-wide rounded font-light"
                         >
-                          {className}
+                          {specialty}
                         </span>
                       ))}
                     </div>
                   </div>
-
-                  <Link
-                    href={`/teachers/${teacher.slug}`}
-                    className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md text-sm font-semibold transition-colors"
-                  >
-                    READ BIO &gt;
-                  </Link>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-16 bg-orange-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to Practice with Our Teachers?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Join one of our classes and experience the guidance of our expert
-            instructors.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/classes"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors"
-            >
-              VIEW CLASS SCHEDULE
-            </Link>
-            <Link
-              href="/pricing"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 text-white px-8 py-3 rounded-md font-semibold transition-colors"
-            >
-              VIEW PRICING
-            </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -88,22 +88,28 @@ const Header = () => {
                   ORIGINAL HOT YOGA
                 </Link>
                 <Link
-                  href="/classes/flow-yoga"
+                  href="/classes/hot-flow"
                   className="block px-4 py-2 text-white hover:bg-gray-700"
                 >
-                  FLOW YOGA
+                  HOT FLOW
                 </Link>
                 <Link
-                  href="/classes/yin-yoga"
+                  href="/classes/yin"
                   className="block px-4 py-2 text-white hover:bg-gray-700"
                 >
-                  YIN YOGA
+                  YIN
                 </Link>
                 <Link
-                  href="/classes/hot-pilates"
+                  href="/classes/inferno-hot-pilates"
                   className="block px-4 py-2 text-white hover:bg-gray-700"
                 >
-                  HOT PILATES
+                  INFERNO HOT PILATES
+                </Link>
+                <Link
+                  href="/classes/mat-pilates"
+                  className="block px-4 py-2 text-white hover:bg-gray-700"
+                >
+                  MAT PILATES
                 </Link>
                 <Link
                   href="/classes"
